@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .max-width {
+    @apply mx-auto max-w-7xl;
+  }
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.background-custom {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.46) 0%,
+      rgba(0, 0, 0, 0.46) 100%
+    ),
+    url('../assets/webps/hero-background-image.webp'), lightgray 50%;
+  background-size: cover;
+  background-position: center;
+}
